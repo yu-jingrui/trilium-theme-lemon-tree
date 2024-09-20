@@ -72,7 +72,6 @@
   src: url('/custom/fonts/roboto-slab-v11-latin-600.woff') format('woff'); 
 }
 
-
 html {
 /* ----------------------------------------------------------------------------- */
 /* COLOR VARIABLES
@@ -555,7 +554,7 @@ div#root-widget div#rest-pane div#center-pane div.ribbon-container div.ribbon-to
 
 div#root-widget div#rest-pane > div.component:first-child {
   border-bottom: var(--border-standard);
-  height: 50px !important;
+  height: 40px !important;
 }
 
 div#root-widget div#rest-pane div.tab-row-widget {
@@ -591,7 +590,7 @@ div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab div.n
     background-color: var(--color-gray-light);
     color: var(--color-gray-light-text);
     align-items: center;
-    height: 50px;
+    height: 40px;
     border-radius: 0;
 }
 
@@ -605,7 +604,7 @@ div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab[activ
 }
 
 div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab div.note-tab-wrapper > div {
-  height: 50px;
+  height: 40px;
   align-items: center;
   display: flex;
   padding: 0;
@@ -1013,7 +1012,7 @@ input#clone-to-note-autocomplete,
 #left-pane div.quick-search {
   border-bottom: var(--border-standard);
   padding: unset;
-
+  height: 40px;
   align-content: center;
   align-items: center;
 }
@@ -1247,8 +1246,9 @@ div#center-pane div.note-detail div.canvas-widget {
 
 div#center-pane div.note-detail div.note-detail-readonly-text
  {
-   border-left: 5px solid var(--color-blue-light);
+   border-left: 2px solid var(--color-blue-light);
    padding: 2rem 4rem 1rem 2rem;
+   font-size: 1.1rem; /*大一点字体*/
 }
 
 div#center-pane div.note-detail div.note-detail-printable {
@@ -1261,11 +1261,12 @@ div#center-pane div.note-detail div.note-detail-editable-text-editor {
 
 div#center-pane div.note-detail div.note-detail-editable-text {
   /*padding: 20px 25px 5px 25px;*/
-     padding: 2rem 0 1rem 2rem;
-  border-left: 5px solid var(--color-orange-dark);
+  padding: 1rem 1rem 1rem 1rem;
+  border-left: 2px solid var(--color-orange-dark);
   flex-direction: column;
   display: flex;
   flex-grow: 1;
+  font-size: 1.1rem; /*大一点字体*/
 }
 
 #center-pane .note-detail + .note-list-widget {
