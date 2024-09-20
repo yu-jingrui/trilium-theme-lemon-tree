@@ -1047,13 +1047,13 @@ div#center-pane .note-list .note-book-card {
 
 
 div#center-pane .note-book-card :is(h1, h2, h3, h4, h5, h6) {
-  /*border-bottom: var(--border-standard);
+  border-bottom: var(--border-standard);
   background-color: var(--color-gray-light);
   display: block;
   margin-top: 0;
   width: 100%;
   padding: 6px;
-  margin-bottom: 0;*/
+  margin-bottom: 0;
 }
 
 
@@ -1145,7 +1145,7 @@ div#center-pane .note-book-card.expanded > .note-book-title {
 }
 
 .note-list-widget .note-list-widget-content .note-list .note-book-card .note-book-content {
-    
+    font-size: 1.1rem;/*List View 大一点字体*/
 }
 
 .note-list-widget .note-list-widget-content .note-list .note-book-card.expanded .note-book-content {
