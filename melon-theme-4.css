@@ -1247,7 +1247,7 @@ div#center-pane div.note-detail div.canvas-widget {
 div#center-pane div.note-detail div.note-detail-readonly-text
  {
    border-left: 2px solid var(--color-blue-light);
-   padding: 2rem 4rem 1rem 2rem;
+   padding: 2rem 3rem 1rem 2rem;
    font-size: 1.1rem; /*大一点字体*/
 }
 
@@ -1377,4 +1377,36 @@ div#center-pane figure.table table {
 div#root-widget div#center-pane div.split-note-container-widget div.note-detail figure > figcaption {
   font-style: italic;
   background-color: white !important;
+}
+
+
+/**** Zen mode - you need to create a button to toggle it on/off!! ****/
+
+.zen-mode #launcher-pane {
+    display:none !important; 
+   }
+
+.zen-mode #left-pane {
+    display:none !important; 
+   }
+
+.zen-mode .tab-row-widget {
+    visibility:hidden !important; 
+   }
+/*
+.zen-mode .title-bar-buttons {
+    visibility:hidden !important; 
+   }
+*/
+/***** Uncomment to hide the ribbon in zen mode ****/
+.zen-mode .ribbon-container {
+        display:none !important; 
+}
+/*hide right pane*/
+.zen-mode #right-pane {
+    display: none !important;
+}
+/****** Uncomment to hide the split panel button in zen mode *****/
+.zen-mode .title-row .button-widget {
+        display:none !important; 
 }
