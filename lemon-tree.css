@@ -1,0 +1,252 @@
+/* ------- Lemon Tree --------
+A delightful light theme for trilium (>v0.94)
+Based on trilium-next-light
+Inspired by Melon-4 theme
+(https://github.com/raphwriter/trilium-theme-melon)
+---------- Jingrui Yu --------- */
+
+:root {
+    /* main theme colors */
+    --color-green: #3cad9e;
+    --color-green-a0: #3cad9ed1;
+    --color-green-a1: #3cad9e70;
+    --color-green-a2:#3cad9e50;
+    --color-green-a3:#3cad9e30;
+    --color-green-light-alpha: #2aa19229;
+    --color-green-text: #f0f4f4;
+    /* main highlight colors */
+    --color-lemon-light: #FFF285;
+    --color-lemon: #FFE465;
+    --color-lemon-a0: #FFE465AA;
+    --color-lemon-a1: #FFE465AA;
+    --color-lemon-a2: #FFE46550;
+    --color-lemon-dark: #F3C144;
+    --color-lemon-darker: #F3A144;
+    /* background colors */
+    --color-paper: #ecebe3;
+    --color-paper-light: #fcfcfa;
+    --color-paper-light-cool: #fcfcfd;
+    /* text colors */
+    --color-text-light-grey: #555;
+    --color-text-grey: #333;
+    --color-text-dark-grey: #111;
+    /* alternative theme colors */
+    --color-blue-dark: #2e4b76;
+    --color-blue-dark-alpha: #2e4b76d1;  
+    --color-blue-dark-text: #e8f1f5;
+    /* alternative highlight colors */
+    --color-orange-light: #f4a261;
+    --color-orange-light-text: #c96a2e;
+    --color-orange-dark: #e76f51;
+    --color-orange-dark-text: #f2dcd6;
+    /* heading colors */
+    --h2-background-color:rgb(105 154 187);
+    --h3-background-color:rgb(112 175 164);
+    --h4-background-color:rgb(215 187 162);
+    --h5-background-color:rgb(190 186 206);
+    --h6-background-color:rgb(197 197 197);
+
+    /* ----------- theme definition ------------ */
+    --theme-style: light;
+    --main-background-color: var(--color-paper-light) !important;
+    --main-text-color: var(--color-text-gray) !important;
+    /*--main-border-color: #ced4da !important;
+  	--alert-bar-background: #f2f2f2 !important;*/
+  
+    --primary-button-background-color: #4682B4 !important;
+    --primary-button-border-color: transparent !important;
+
+    --toast-background: var(--color-lemon-a0) !important;
+    --toast-text-color: var(--color-text-dark-grey) !important;
+    
+  	--launcher-pane-vert-text-color: var(--color-paper) !important;
+    --launcher-pane-vert-background-color: var(--color-green) !important;
+    --launcher-pane-vert-button-hover-background: var(--color-lemon-dark) !important;
+    --launcher-pane-vert-button-hover-color: var(--color-paper) !important;
+    --launcher-pane-vert-button-hover-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) !important;
+  	--launcher-pane-horiz-text-color: var(--color-paper) !important;
+    --launcher-pane-horiz-background-color: var(--color-green) !important;
+    --launcher-pane-horiz-button-hover-background: var(--color-lemon-dark) !important;
+    --launcher-pane-horiz-button-hover-color: var(--color-paper) !important;
+    --launcher-pane-horiz-button-hover-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) !important;
+    /*--quick-search-background: var(--color-green-a3) !important;
+    --quick-search-hover-background: var(--color-green-a2) !important;*/
+    
+    --left-pane-background-color: var(--color-paper-light-cool) !important;
+    --left-pane-text-color: var(--color-text-grey) !important;
+    --left-pane-item-hover-background: var(--color-green-a1) !important;
+    --left-pane-item-selected-background: var(--color-green) !important;
+    --left-pane-item-selected-color: var(--color-paper-light-cool) !important;
+    --left-pane-item-selected-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
+    --left-pane-item-action-button-hover-background: var(--color-lemon-dark) !important;
+ 
+    --active-tab-background-color: var(--color-green) !important;
+    --active-tab-text-color: var(--color-paper) !important;
+    --active-tab-hover-background-color: var(--color-lemon) !important;
+    --active-tab-shadow: 0px 0px 0px rgba(0, 0, 0, 0), 0px 0px 0px rgba(0, 0, 0, 0) !important;
+
+    --inactive-tab-background-color: var(--color-green-a3) !important;
+    --inactive-tab-hover-background-color: var(--color-lemon-a2) !important;
+    --inactive-tab-text-color: var(--color-text-light-grey) !important;
+
+    --new-tab-button-background: var(--color-paper) !important;
+    --new-tab-button-color: #3a3a3a;
+    --new-tab-button-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
+    --new-tab-button-hover-background: var(--color-lemon-dark) !important;
+    --new-tab-button-hover-color: var(--color-paper-light-cool) !important;
+
+    --promoted-attribute-card-background-color: var(--color-green-a3) !important;
+    
+    --scrollbar-thumb-color: var(--color-green-a1) !important;
+    --scrollbar-thumb-hover-color: var(--color-green) !important;
+    --tooltip-background-color: #F3f3f3;
+    --link-color: #4682B4 !important;
+
+    --floating-button-background-color: var(--color-lemon-a2) !important;
+    --floating-button-color: var(--color-text-dark-grey) !important;
+
+    --selection-background-color: var(--color-green-a2) !important;
+    --mermaid-theme: light;
+    --ck-color-code-block-label-background: #333;
+    --right-pane-li-hover-background:rgb(235, 235, 235);
+
+    --right-pane-item-hover-background: var(--color-green-a2) !important;
+    --right-pane-item-hover-color: var(--color-text-dark-grey) !important;
+}
+
+/* add a lemon icon on active tab before title
+works only with vertical launch bar */
+div#rest-pane div.tab-row-widget div.tab-row-widget-container div.note-tab[active] .note-tab-wrapper div.note-tab-title::before {
+    /*content: "\1F348  "; /* melon */
+    content: "\1F34B"; /* lemon */
+    /*margin-right: 5px;*/
+    font-size: 1rem;
+}
+
+/* Move new note button to the position of note icon*/
+.desktop .add-note-button{
+    position: absolute;
+    left: -1;
+    margin-left: 28px !important;
+}
+.mobile .add-note-button{
+    position: absolute;
+    left: -1;
+    margin-left: 28px !important;
+}
+.mobile .fancytree-expander{
+    margin-right: 20px;
+}
+
+/* Some modifications to headings */
+h1, h2, h3, h4, h5, h6{
+    margin-top:.3rem !important;
+    margin-bottom: .15rem !important;
+}
+
+div.toc-widget span.toc>ol>li{
+    color:var(--h2-background-color);
+}
+div.toc-widget span.toc>ol>ol>li{
+    color:var(--h3-background-color);
+}
+div.toc-widget span.toc>ol>ol>ol>li{
+    color:var(--h4-background-color);
+}
+div.toc-widget span.toc>ol>ol>ol>ol>li{
+    color:var(--h5-background-color);
+}
+div.toc-widget span.toc>ol>ol>ol>ol>ol>li{
+    color:var(--h6-background-color);
+}
+.toc ol{
+    padding-left:15px;
+}
+
+
+/*Make the notification in the bottom of tree*/
+div#toast-container {
+    left: 60px !important;
+    bottom: 10px !important;
+    top: auto !important;
+    width: auto !important;
+}
+
+/* Launcher-pane vertical centered */
+#launcher-pane.vertical{
+    align-items: center; 
+}
+#launcher-pane.vertical .launcher-button, #launcher-pane.vertical .dropdown{
+	width:52px !important;
+    height:48px !important;
+}
+#launcher-container {
+    width: 100% !important;
+}
+
+.icon-action.global-menu-button{
+    padding-top: 0px !important;
+    margin-top: 3px !important;
+    font-size: 1.2em !important;
+}
+.icon-action.global-menu-button .global-menu-button-update-available {
+	top: 17px;
+    left: 21px;
+}
+
+
+
+.note-split.type-text .note-detail > div > div > p {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+    margin-right: 1rem !important;
+    /*text-indent: 2em; /* first-line indent */
+    text-align: justify; /* Align both ends */
+}
+/*Apply only to p and not to any sub elements within p*/
+.note-split.type-text p > * {
+    text-indent: 0;
+}
+
+.note-split.type-text blockquote{
+	font-size:100%;
+}
+
+.note-split.type-text a {
+    color: var(--link-color);
+}
+
+/*Make the notes title box not displaying focus animation*/
+input.note-title:focus{
+    transition: none !important;
+}
+
+/*text-note code*/
+div.note-detail pre.hljs{
+	box-shadow: unset !important;
+}
+.ck.ck-editor__editable .ck-code_selected{
+	background-color: hsla(0,0%,78%,.3) !important;
+}
+
+/*Spacing between the top and bottom of the text block*/
+/*
+div.note-detail .attachment-content-wrapper pre code, div.note-detail .ck-content pre code, div.note-detail .ck-mermaid__editing-view{
+	padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.attribute-list > div, .inherited-attributes-widget > div{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+*/
+.calendar-dropdown-widget .calendar-date-exists{
+    color: var(--color-lemon-darker) !important;
+}
+
+/*ckeditor*/
+.ck-content hr {
+	height: 2px !important;
+}
+
