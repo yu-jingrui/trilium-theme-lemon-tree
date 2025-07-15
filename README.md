@@ -24,6 +24,13 @@ Install the theme by following these steps:
     - Name: appTheme
     - Value: lemon-tree
     - inheritable: _not ticked_
+- add a new attribute to the lemon-tree note `(Alt + A)`
+  - either copy & paste `#appThemeBase=next-light` to the node's attributes
+  - or use the UI with these settings
+    - Type: Label
+    - Name: appThemeBase
+    - Value: next-light
+    - inheritable: _not ticked_
 - go to Menu > Options
 - select it as your new theme
 
