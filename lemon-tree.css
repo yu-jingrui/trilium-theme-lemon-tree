@@ -78,7 +78,9 @@ Inspired by Melon-4 theme
     --left-pane-item-selected-background: var(--color-green) !important;
     --left-pane-item-selected-color: var(--color-paper-light-cool) !important;
     --left-pane-item-selected-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2) !important;
-    --left-pane-item-action-button-hover-background: var(--color-lemon-dark) !important;
+    --left-pane-item-action-button-background: var(--color-paper) !important;
+    --left-pane-item-action-button-color: var(--color-text-grey) !important;
+    --left-pane-item-action-button-hover-background: var(--color-lemon) !important;
  
     --active-tab-background-color: var(--color-green) !important;
     --active-tab-text-color: var(--color-paper) !important;
@@ -104,6 +106,7 @@ Inspired by Melon-4 theme
 
     --floating-button-background-color: var(--color-lemon-a2) !important;
     --floating-button-color: var(--color-text-dark-grey) !important;
+    --floating-button-hover-background: var(--color-lemon) !important;
 
     --selection-background-color: var(--color-green-a2) !important;
     --mermaid-theme: light;
@@ -249,4 +252,3 @@ div.note-detail .attachment-content-wrapper pre code, div.note-detail .ck-conten
 .ck-content hr {
 	height: 2px !important;
 }
-
