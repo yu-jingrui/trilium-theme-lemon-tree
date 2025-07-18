@@ -50,7 +50,8 @@ Inspired by Melon-4 theme
     /* ----------- theme definition ------------ */
     --theme-style: light;
     --main-background-color: var(--color-paper-greenish) !important;
-    --main-text-color: var(--color-text-gray) !important;
+    --main-text-color: var(--color-text-gray) !important;    
+    --border-radius: 4px;
     /*--main-border-color: #ced4da !important;
   	--alert-bar-background: #f2f2f2 !important;*/
   
@@ -90,7 +91,6 @@ Inspired by Melon-4 theme
 
     /* ------------- tab bar -------------- */
     --tab-note-icons: false !important;
-    --tab-border-radius: 4px;
     /*--tab-bar-height: 40px !important;
     --tab-height: 24px !important;*/
     
@@ -109,7 +109,7 @@ Inspired by Melon-4 theme
     --new-tab-button-hover-background: var(--color-lemon-dark) !important;
     --new-tab-button-hover-color: var(--color-paper-light-cool) !important;
 
-    --center-pane-border-radius: var(--tab-border-radius) !important;
+    --center-pane-border-radius: var(--border-radius) !important;
     
     --promoted-attribute-card-background-color: var(--color-green-a3) !important;
     
@@ -209,25 +209,26 @@ div#toast-container {
 }
 
 #launcher-pane .launcher-button {
-    border-radius: var(--tab-border-radius) !important;
+    border-radius: var(--border-radius) !important;
 }
 
 /* change tab border radius */
 body.layout-vertical .tab-row-widget .note-tab .note-tab-wrapper {
-    border-radius: var(--tab-border-radius) !important;
+    border-radius: var(--border-radius) !important;
 }
 body.layout-horizontal .tab-row-widget .note-tab .note-tab-wrapper {
-    border-radius: var(--tab-border-radius) !important;
+    border-radius: var(--border-radius) !important;
 }
+
 
 /* left pane (tree) */
 /* match quick search size and position to tab bar */
 div.quick-search {
-    --padding-top: 2px !important;
+    --padding-top: 3px !important;
 }
 div.quick-search::before {
-    border-radius: var(--tab-border-radius) !important;
-    height: 36px !important;
+    border-radius: var(--border-radius) !important;
+    height: 35px !important;
 }
 
 .note-split.type-text .note-detail > div > div > p {
@@ -238,10 +239,10 @@ div.quick-search::before {
     text-align: justify; /* Align both ends */
 }
 #left-pane span.fancytree-node {
-    border-radius: var(--tab-border-radius) !important;
+    border-radius: var(--border-radius) !important;
 }
 #left-pane span.fancytree-node.fancytree-active:before {
-    border-radius: var(--tab-border-radius) !important;
+    border-radius: var(--border-radius) !important;
 }
 
 /*Apply only to p and not to any sub elements within p*/
@@ -260,6 +261,10 @@ div.quick-search::before {
 /*Make the notes title box not displaying focus animation*/
 input.note-title:focus{
     transition: none !important;
+}
+
+div.promoted-attribute-cell {
+    border-radius: var(--border-radius) !important;
 }
 
 /*text-note code*/
