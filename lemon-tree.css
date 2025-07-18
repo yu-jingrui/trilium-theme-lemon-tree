@@ -24,7 +24,8 @@ Inspired by Melon-4 theme
     --color-lemon-darker: #F3A144;
     /* background colors */
     --color-paper: #ecebe3;
-    --color-paper-light: #fcfcfa;
+    --color-paper-light: #fcfcfa;    
+    --color-paper-greenish: #fafffa;
     --color-paper-light-cool: #fcfcfd;
     /* text colors */
     --color-text-light-grey: #555;
@@ -48,7 +49,7 @@ Inspired by Melon-4 theme
 
     /* ----------- theme definition ------------ */
     --theme-style: light;
-    --main-background-color: var(--color-paper-light) !important;
+    --main-background-color: var(--color-paper-greenish) !important;
     --main-text-color: var(--color-text-gray) !important;
     /*--main-border-color: #ced4da !important;
   	--alert-bar-background: #f2f2f2 !important;*/
@@ -58,6 +59,9 @@ Inspired by Melon-4 theme
 
     --toast-background: var(--color-lemon-a0) !important;
     --toast-text-color: var(--color-text-dark-grey) !important;
+
+    /* ------------- launcher pane -------------- */
+    --launcher-pane-vert-size: 48px !important;
     
   	--launcher-pane-vert-text-color: var(--color-paper) !important;
     --launcher-pane-vert-background-color: var(--color-green) !important;
@@ -69,6 +73,8 @@ Inspired by Melon-4 theme
     --launcher-pane-horiz-button-hover-background: var(--color-lemon-dark) !important;
     --launcher-pane-horiz-button-hover-color: var(--color-paper) !important;
     --launcher-pane-horiz-button-hover-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) !important;
+
+    /* ------------- left pane (tree) -------------- */
     /*--quick-search-background: var(--color-green-a3) !important;
     --quick-search-hover-background: var(--color-green-a2) !important;*/
     
@@ -81,7 +87,13 @@ Inspired by Melon-4 theme
     --left-pane-item-action-button-background: var(--color-paper) !important;
     --left-pane-item-action-button-color: var(--color-text-grey) !important;
     --left-pane-item-action-button-hover-background: var(--color-lemon) !important;
- 
+
+    /* ------------- tab bar -------------- */
+    --tab-note-icons: false !important;
+    --tab-border-radius: 4px;
+    /*--tab-bar-height: 40px !important;
+    --tab-height: 24px !important;*/
+    
     --active-tab-background-color: var(--color-green) !important;
     --active-tab-text-color: var(--color-paper) !important;
     --active-tab-hover-background-color: var(--color-lemon) !important;
@@ -97,6 +109,8 @@ Inspired by Melon-4 theme
     --new-tab-button-hover-background: var(--color-lemon-dark) !important;
     --new-tab-button-hover-color: var(--color-paper-light-cool) !important;
 
+    --center-pane-border-radius: var(--tab-border-radius) !important;
+    
     --promoted-attribute-card-background-color: var(--color-green-a3) !important;
     
     --scrollbar-thumb-color: var(--color-green-a1) !important;
@@ -175,18 +189,6 @@ div#toast-container {
     width: auto !important;
 }
 
-/* Launcher-pane vertical centered */
-#launcher-pane.vertical{
-    align-items: center; 
-}
-#launcher-pane.vertical .launcher-button, #launcher-pane.vertical .dropdown{
-	width:52px !important;
-    height:48px !important;
-}
-#launcher-container {
-    width: 100% !important;
-}
-
 .icon-action.global-menu-button{
     padding-top: 0px !important;
     margin-top: 3px !important;
@@ -196,8 +198,37 @@ div#toast-container {
 	top: 17px;
     left: 21px;
 }
+/* Launcher-pane vertical centered */
+#launcher-pane.vertical{
+    align-items: center; 
+}
 
+#launcher-pane.vertical .launcher-button, #launcher-pane.vertical .dropdown{
+	width:44px !important;
+    height:46px !important;
+}
 
+#launcher-pane .launcher-button {
+    border-radius: var(--tab-border-radius) !important;
+}
+
+/* change tab border radius */
+body.layout-vertical .tab-row-widget .note-tab .note-tab-wrapper {
+    border-radius: var(--tab-border-radius) !important;
+}
+body.layout-horizontal .tab-row-widget .note-tab .note-tab-wrapper {
+    border-radius: var(--tab-border-radius) !important;
+}
+
+/* left pane (tree) */
+/* match quick search size and position to tab bar */
+div.quick-search {
+    --padding-top: 2px !important;
+}
+div.quick-search::before {
+    border-radius: var(--tab-border-radius) !important;
+    height: 36px !important;
+}
 
 .note-split.type-text .note-detail > div > div > p {
     margin-top: 0.5rem !important;
@@ -206,6 +237,13 @@ div#toast-container {
     /*text-indent: 2em; /* first-line indent */
     text-align: justify; /* Align both ends */
 }
+#left-pane span.fancytree-node {
+    border-radius: var(--tab-border-radius) !important;
+}
+#left-pane span.fancytree-node.fancytree-active:before {
+    border-radius: var(--tab-border-radius) !important;
+}
+
 /*Apply only to p and not to any sub elements within p*/
 .note-split.type-text p > * {
     text-indent: 0;
